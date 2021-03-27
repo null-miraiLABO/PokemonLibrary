@@ -10,9 +10,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="16dp"
         android:text="ポケモン図鑑"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,9 +30,9 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="271dp"
-        android:layout_height="145dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="244dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -39,35 +41,46 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ぜんぶ" />
+            android:text="ぜんぶ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="くさ" />
+            android:text="くさ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ほのう" />
+            android:text="ほのう"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="みず" />
+            android:text="みず"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="108dp"
         android:layout_marginTop="12dp"
+        android:background="@android:color/holo_orange_dark"
         android:onClick="clickStart"
         android:text="けんさく"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -75,8 +88,8 @@
         android:id="@+id/imageView3"
         android:layout_width="154dp"
         android:layout_height="134dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/p00" />
